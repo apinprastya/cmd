@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd/harness"
-	"github.com/revel/revel"
+	"github.com/apinprastya/cmd/harness"
+	"github.com/apinprastya/revel"
 )
 
 var cmdBuild = &Command{
@@ -27,7 +27,7 @@ WARNING: The target path will be completely deleted, if it already exists!
 
 For example:
 
-    revel build github.com/revel/samples/chat /tmp/chat
+    revel build github.com/apinprastya/samples/chat /tmp/chat
 `,
 }
 

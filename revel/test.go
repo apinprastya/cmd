@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/revel/cmd/harness"
-	"github.com/revel/modules/testrunner/app/controllers"
-	"github.com/revel/revel"
+	"github.com/apinprastya/cmd/harness"
+	"github.com/apinprastya/modules/testrunner/app/controllers"
+	"github.com/apinprastya/revel"
 )
 
 var cmdTest = &Command{
@@ -24,7 +24,7 @@ Run all tests for the Revel app named by the given import path.
 
 For example, to run the booking sample application's tests:
 
-    revel test github.com/revel/samples/booking dev
+    revel test github.com/apinprastya/samples/booking dev
 
 The run mode is used to select which set of app.conf configuration should
 apply and may be used to determine logic in the application itself.
@@ -63,7 +63,7 @@ func testApp(args []string) {
 	// Ensure that the testrunner is loaded in this mode.
 	testRunnerFound := false
 	for _, module := range revel.Modules {
-		if module.ImportPath == revel.Config.StringDefault("module.testrunner", "github.com/revel/modules/testrunner") {
+		if module.ImportPath == revel.Config.StringDefault("module.testrunner", "github.com/apinprastya/modules/testrunner") {
 			testRunnerFound = true
 			break
 		}
@@ -73,7 +73,7 @@ func testApp(args []string) {
 
 You can add it to a run mode configuration with the following line:
 
-	module.testrunner = github.com/revel/modules/testrunner
+	module.testrunner = github.com/apinprastya/modules/testrunner
 
 `)
 	}

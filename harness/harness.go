@@ -25,7 +25,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/revel/revel"
+	"github.com/apinprastya/revel"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/revel/revel"
+	"github.com/apinprastya/revel"
 )
 
 var cmdVersion = &Command{
